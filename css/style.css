@@ -456,15 +456,26 @@ h1, h2, h3, h4, h5 {
   display: block;
 }
 
-/* Metro Map Node Tooltip */
+/* Metro Map Node Hover & Hit Areas */
 .station-node {
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 
-.station-node:hover {
-  transform: scale(1.12);
-  transform-origin: center;
+.station-node .hit-area {
+  fill: transparent;
+  pointer-events: all;
+}
+
+.station-node circle:not(.hit-area) {
+  transition: filter 0.2s ease, stroke-width 0.2s ease;
+}
+
+.station-node:hover circle:not(.hit-area) {
+  filter: drop-shadow(0 0 8px rgba(0, 180, 200, 0.85));
+}
+
+.station-node:hover circle[fill="#E63946"] {
+  filter: drop-shadow(0 0 8px rgba(230, 57, 70, 0.85));
 }
 
 .map-legend {

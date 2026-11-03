@@ -127,11 +127,22 @@ function initMetroHeroMap() {
       title: 'Absprung: Zahlungsabbruch',
       text: '✕ Kunde bricht Kauf ab. Grund: Rechnungs- und Lieferadresse stimmen nicht überein. 0 € Umsatz.',
       type: 'danger'
+    },
+    'station-absprung-top': {
+      title: 'Absprung: Versteckte Hürde',
+      text: '✕ Kunde springt vor dem Warenkorb ab. Grund: Unklare Lieferzeitangabe ("Lieferung in 2-14 Tagen").',
+      type: 'danger'
     }
   };
 
+  let toastHideTimer = null;
+
   stations.forEach(node => {
     node.addEventListener('mouseenter', () => {
+      if (toastHideTimer) {
+        clearTimeout(toastHideTimer);
+        toastHideTimer = null;
+      }
       const id = node.getAttribute('id');
       const data = stationData[id];
       if (data) {
@@ -141,7 +152,9 @@ function initMetroHeroMap() {
     });
 
     node.addEventListener('mouseleave', () => {
-      toast.classList.remove('active');
+      toastHideTimer = setTimeout(() => {
+        toast.classList.remove('active');
+      }, 300);
     });
 
     // Touch support for mobile devices

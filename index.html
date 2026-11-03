@@ -132,36 +132,41 @@
           <line x1="540" y1="180" x2="540" y2="80" stroke="#E63946" stroke-width="4" stroke-dasharray="6 6"/>
 
           <!-- Station Labels -->
-          <text x="170" y="48" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A" text-anchor="middle">Startseite</text>
-          <text x="340" y="148" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A" text-anchor="middle">Produktseite</text>
+          <text x="170" y="46" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A" text-anchor="middle">Startseite</text>
+          <text x="340" y="146" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A" text-anchor="middle">Produktseite</text>
           <text x="515" y="275" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A">Warenkorb</text>
           <text x="480" y="325" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A">Checkout</text>
           <text x="480" y="375" font-family="'Inter', sans-serif" font-weight="800" font-size="14" fill="#0D1B2A">Kauf ✓</text>
-          <text x="525" y="65" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#E63946">Absprung</text>
+          <text x="518" y="75" font-family="'Inter', sans-serif" font-weight="800" font-size="14" fill="#E63946" text-anchor="end">Absprung</text>
 
           <!-- Stations: Start Node -->
           <g class="station-node" id="station-start">
+            <circle class="hit-area" cx="170" cy="70" r="26"/>
             <circle cx="170" cy="70" r="10" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="4"/>
           </g>
 
           <!-- Junction Node -->
           <g class="station-node" id="station-junction-1">
+            <circle class="hit-area" cx="230" cy="170" r="26"/>
             <circle cx="230" cy="170" r="11" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="4"/>
           </g>
 
           <!-- Stations: Produktseite -->
           <g class="station-node" id="station-produkt">
+            <circle class="hit-area" cx="340" cy="170" r="26"/>
             <circle cx="340" cy="170" r="10" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="4"/>
           </g>
 
           <!-- Stations: Warenkorb Junction -->
           <g class="station-node" id="station-warenkorb">
+            <circle class="hit-area" cx="460" cy="270" r="28"/>
             <circle cx="460" cy="270" r="13" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="5"/>
             <circle cx="460" cy="270" r="5" fill="#00B4C8"/>
           </g>
 
           <!-- Drop-off Station 1 (Branch bottom) -->
           <g class="station-node" id="station-absprung-1">
+            <circle class="hit-area" cx="210" cy="370" r="26"/>
             <circle cx="210" cy="370" r="10" fill="#E63946"/>
             <line x1="206" y1="366" x2="214" y2="374" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
             <line x1="214" y1="366" x2="206" y2="374" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
@@ -169,6 +174,7 @@
 
           <!-- Drop-off Station 2 (Middle track obstacle) -->
           <g class="station-node" id="station-absprung-2">
+            <circle class="hit-area" cx="290" cy="270" r="26"/>
             <circle cx="290" cy="270" r="10" fill="#E63946"/>
             <line x1="286" y1="266" x2="294" y2="274" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
             <line x1="294" y1="266" x2="286" y2="274" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
@@ -176,6 +182,7 @@
 
           <!-- Drop-off Station 3 (Checkout obstacle) -->
           <g class="station-node" id="station-checkout">
+            <circle class="hit-area" cx="460" cy="320" r="26"/>
             <circle cx="460" cy="320" r="10" fill="#E63946"/>
             <line x1="456" y1="316" x2="464" y2="324" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
             <line x1="464" y1="316" x2="456" y2="324" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
@@ -185,20 +192,24 @@
           <circle cx="540" cy="70" r="11" fill="none" stroke="#E63946" stroke-width="3"/>
 
           <!-- Drop-off Node on track before Absprung -->
-          <circle cx="540" cy="180" r="9" fill="#E63946"/>
-          <line x1="537" y1="177" x2="543" y2="183" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
-          <line x1="543" y1="177" x2="537" y2="183" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          <g class="station-node" id="station-absprung-top">
+            <circle class="hit-area" cx="540" cy="180" r="26"/>
+            <circle cx="540" cy="180" r="10" fill="#E63946"/>
+            <line x1="536" y1="176" x2="544" y2="184" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="544" y1="176" x2="536" y2="184" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
 
           <!-- Success Terminus: Kauf -->
           <g class="station-node" id="station-kauf">
+            <circle class="hit-area" cx="460" cy="370" r="26"/>
             <circle cx="460" cy="370" r="12" fill="#0D1B2A"/>
             <polyline points="455 370 458 374 466 366" stroke="#28D0E3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           </g>
 
-          <!-- Animated moving customer indicator -->
-          <circle cx="40" cy="70" r="6" fill="#00B4C8">
+          <!-- Animated moving customer indicator (cx=0, cy=0 ensures it rides dead-center on the path) -->
+          <circle cx="0" cy="0" r="6" fill="#FFFFFF" stroke="#00B4C8" stroke-width="3">
             <animateMotion path="M 40 70 L 170 70 L 230 170 L 340 170 L 460 270 L 460 370" 
-                           dur="5s" repeatCount="indefinite"/>
+                           dur="5.5s" repeatCount="indefinite"/>
           </circle>
         </svg>
 
