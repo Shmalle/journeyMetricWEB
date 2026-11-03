@@ -1,0 +1,91 @@
+/* ============================================================
+   JourneyMetric — impressum-style.css
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --bg:    #EDECEA;
+  --dark:  #0D1B2A;
+  --cyan:  #00B4C8;
+  --muted: #6B7280;
+  --white: #FFFFFF;
+  --shadow: 0 2px 16px rgba(13,27,42,.07);
+  --border: rgba(13,27,42,.08);
+  --radius: 12px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  min-height: 100vh;
+}
+
+.container { width: min(720px, 100% - 2rem); margin-inline: auto; }
+
+.imp-nav {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.imp-nav__inner {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.imp-nav__logo {
+  display: flex; align-items: center; gap: .6rem;
+  font-size: .78rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--dark); text-decoration: none;
+}
+.imp-nav__logo-sq {
+  width: 30px; height: 30px; background: var(--dark); border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem; font-weight: 800; color: var(--cyan);
+}
+.imp-nav__back {
+  font-size: .8rem; font-weight: 600; color: var(--muted);
+  text-decoration: none; display: flex; align-items: center; gap: .3rem;
+  transition: color .2s;
+}
+.imp-nav__back:hover { color: var(--dark); }
+
+.imp-main {
+  padding: 4rem 0 6rem;
+}
+
+.imp-main h1 {
+  font-size: 2.2rem; font-weight: 800; letter-spacing: -.02em; margin-bottom: 2.5rem;
+}
+
+.imp-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+}
+
+.imp-card h2 {
+  font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 1rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.imp-card p {
+  font-size: .92rem; line-height: 1.7; color: var(--dark); margin-bottom: .3rem;
+}
+.imp-card a { color: var(--cyan); text-decoration: none; }
+.imp-card a:hover { text-decoration: underline; }
+
+.imp-section { margin-bottom: 2rem; }
+.imp-section:last-child { margin-bottom: 0; }
+
+.imp-footer {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: .8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}

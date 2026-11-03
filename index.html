@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JourneyMetric | Beratung für datenbasierte Tests & KI-Benchmarks</title>
+  <meta name="description" content="JourneyMetric deployt eine Flotte von 1.000 synthetischen KI-Kundenpersonas, um unsichtbare Conversion-Killer in Onlineshops aufzudecken.">
+  <meta name="author" content="JourneyMetric, DHBW Mannheim">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="JourneyMetric · Endstation Warenkorb?">
+  <meta property="og:description" content="Viele Kunden steigen aus, bevor sie kaufen – an Hürden, die niemand sieht. Wir decken sie mit 1.000 synthetischen KI-Kunden auf.">
+  <meta property="og:url" content="https://journeymetric.de">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-grid">
+
+  <!-- Top Progress Bar (Metro Line Tracker) -->
+  <div id="scroll-track"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-link" aria-label="JourneyMetric Startseite">
+        <div class="brand-mark">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+            <!-- J Path -->
+            <path d="M12 9V20C12 22 10 23 8 23" stroke="#00B4C8" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="12" cy="7" r="2" fill="#FFFFFF"/>
+            <!-- M Path -->
+            <path d="M16 23V11L21 17L26 11V23" stroke="#00B4C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="26" cy="24" r="2.5" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div>
+          <span class="brand-title">JOURNEYMETRIC</span>
+          <span class="brand-subtitle">Unternehmensberatung</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#problem" class="nav-link">Das Problem</a></li>
+          <li><a href="#loesung" class="nav-link">Unsere Lösung</a></li>
+          <li><a href="#engine" class="nav-link">Metroverse</a></li>
+          <li><a href="#mehrwert" class="nav-link">Mehrwert & ROI</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#pakete" class="nav-link">Tickets</a></li>
+          <li><a href="#kontakt" class="nav-cta">Erstgespräch →</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="section-tag">Sales Pitch · Metroverse</div>
+        <h1>
+          Endstation<br>
+          <span class="text-cyan">Warenkorb?</span>
+        </h1>
+        <p class="hero-subtext">
+          Viele Kunden steigen aus, bevor sie kaufen – an Hürden, die niemand sieht. Jeder Kunde, der zu früh aussteigt, nimmt seinen Warenkorb mit.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn-primary">Erstgespräch vereinbaren →</a>
+          <a href="#mehrwert" class="btn-secondary">ROI berechnen</a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>1.000 synthetische KI-Personas</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            <span>DHBW Mannheim Consulting</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metro Map Card -->
+      <div class="metro-map-card">
+        <div class="metro-map-header">
+          <span class="map-badge">FAHRPLAN-SIMULATION · LIVE</span>
+          <div class="map-status-live">
+            <span class="map-pulse"></span>
+            <span>Typische Abbruchzonen erkannt</span>
+          </div>
+        </div>
+
+        <!-- SVG Metro Map (Replicating Pitch Slide 1 & OnePager) -->
+        <svg class="metro-svg" viewBox="0 0 620 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background Grid lines in map -->
+          <line x1="20" y1="70" x2="600" y2="70" stroke="#E2E2DF" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="20" y1="170" x2="600" y2="170" stroke="#E2E2DF" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="20" y1="270" x2="600" y2="270" stroke="#E2E2DF" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="20" y1="370" x2="600" y2="370" stroke="#E2E2DF" stroke-width="1" stroke-dasharray="4 4"/>
+
+          <!-- Dark Main Line: Horizontal Track -->
+          <path d="M 40 270 L 170 270 L 320 270 L 460 270 L 540 180" 
+                stroke="#0D1B2A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Cyan Track: Startseite -> Produktseite -> Warenkorb -->
+          <path d="M 40 70 L 170 70 L 230 170 L 340 170 L 460 270" 
+                stroke="#00B4C8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Cyan Track Branch: Alt Branch to Drop-off -->
+          <path d="M 230 170 L 210 370 L 70 370" 
+                stroke="#5CD5E4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Vertical Success & Checkout Track down from Warenkorb -->
+          <path d="M 460 270 L 460 370" 
+                stroke="#00B4C8" stroke-width="8" stroke-linecap="round"/>
+
+          <!-- Dotted Line to Abandonment Station -->
+          <line x1="540" y1="180" x2="540" y2="80" stroke="#E63946" stroke-width="4" stroke-dasharray="6 6"/>
+
+          <!-- Station Labels -->
+          <text x="170" y="48" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A" text-anchor="middle">Startseite</text>
+          <text x="340" y="148" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A" text-anchor="middle">Produktseite</text>
+          <text x="515" y="275" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A">Warenkorb</text>
+          <text x="480" y="325" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#0D1B2A">Checkout</text>
+          <text x="480" y="375" font-family="'Inter', sans-serif" font-weight="800" font-size="14" fill="#0D1B2A">Kauf ✓</text>
+          <text x="525" y="65" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#E63946">Absprung</text>
+
+          <!-- Stations: Start Node -->
+          <g class="station-node" id="station-start">
+            <circle cx="170" cy="70" r="10" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="4"/>
+          </g>
+
+          <!-- Junction Node -->
+          <g class="station-node" id="station-junction-1">
+            <circle cx="230" cy="170" r="11" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="4"/>
+          </g>
+
+          <!-- Stations: Produktseite -->
+          <g class="station-node" id="station-produkt">
+            <circle cx="340" cy="170" r="10" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="4"/>
+          </g>
+
+          <!-- Stations: Warenkorb Junction -->
+          <g class="station-node" id="station-warenkorb">
+            <circle cx="460" cy="270" r="13" fill="#FFFFFF" stroke="#0D1B2A" stroke-width="5"/>
+            <circle cx="460" cy="270" r="5" fill="#00B4C8"/>
+          </g>
+
+          <!-- Drop-off Station 1 (Branch bottom) -->
+          <g class="station-node" id="station-absprung-1">
+            <circle cx="210" cy="370" r="10" fill="#E63946"/>
+            <line x1="206" y1="366" x2="214" y2="374" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="214" y1="366" x2="206" y2="374" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+
+          <!-- Drop-off Station 2 (Middle track obstacle) -->
+          <g class="station-node" id="station-absprung-2">
+            <circle cx="290" cy="270" r="10" fill="#E63946"/>
+            <line x1="286" y1="266" x2="294" y2="274" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="294" y1="266" x2="286" y2="274" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+
+          <!-- Drop-off Station 3 (Checkout obstacle) -->
+          <g class="station-node" id="station-checkout">
+            <circle cx="460" cy="320" r="10" fill="#E63946"/>
+            <line x1="456" y1="316" x2="464" y2="324" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="464" y1="316" x2="456" y2="324" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+
+          <!-- Top Abandonment Target Node -->
+          <circle cx="540" cy="70" r="11" fill="none" stroke="#E63946" stroke-width="3"/>
+
+          <!-- Drop-off Node on track before Absprung -->
+          <circle cx="540" cy="180" r="9" fill="#E63946"/>
+          <line x1="537" y1="177" x2="543" y2="183" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="543" y1="177" x2="537" y2="183" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+
+          <!-- Success Terminus: Kauf -->
+          <g class="station-node" id="station-kauf">
+            <circle cx="460" cy="370" r="12" fill="#0D1B2A"/>
+            <polyline points="455 370 458 374 466 366" stroke="#28D0E3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- Animated moving customer indicator -->
+          <circle cx="40" cy="70" r="6" fill="#00B4C8">
+            <animateMotion path="M 40 70 L 170 70 L 230 170 L 340 170 L 460 270 L 460 370" 
+                           dur="5s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot cyan"></span> Metroverse Route</div>
+          <div class="legend-item"><span class="legend-dot red"></span> Erkannte Hürde / Abbruch</div>
+          <div class="legend-item"><span class="legend-dot dark"></span> Kaufabschluss</div>
+        </div>
+
+        <!-- Dynamic Hover Inspection Toast -->
+        <div id="persona-toast" class="persona-toast">
+          Haltestelle berühren, um Persona-Erkenntnisse zu sehen.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="problem">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">01 · Das Problem · Die Zahlen</div>
+        <h2>
+          Sieben von zehn Warenkörben<br>
+          <span class="text-cyan">bleiben unbezahlt</span>
+        </h2>
+        <p class="lead">
+          Web-Analytics meldet zwar, dass Besucher abspringen – verrät Ihnen aber nicht, an welcher unscheinbaren Hürde Ihre Kunden scheitern.
+        </p>
+      </div>
+
+      <div class="problem-card-grid">
+        <!-- Big Stat -->
+        <div class="stat-hero-card">
+          <div class="stat-huge">≈ 70 %</div>
+          <p class="stat-desc">
+            aller Online-Warenkörbe werden im Schnitt vor der Bezahlung abgebrochen.
+          </p>
+        </div>
+
+        <!-- Breakdown Bars -->
+        <div class="bars-card">
+          <div class="bars-title">Die häufigsten Gründe für den Abbruch</div>
+
+          <div class="bar-row">
+            <div class="bar-label-group">
+              <span>Unerwartete Zusatzkosten (Versand, Gebühren)</span>
+              <span class="bar-value">39 %</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="39"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-label-group">
+              <span>Zwang zur Kontoerstellung vor Checkout</span>
+              <span class="bar-value">19 %</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="19"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-label-group">
+              <span>Ablauf zu lang oder komplex</span>
+              <span class="bar-value">18 %</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="18"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-label-group">
+              <span>Gewünschte Zahlart fehlt oder bricht ab</span>
+              <span class="bar-value">10 %</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="10"></div>
+            </div>
+          </div>
+
+          <div class="source-note">
+            Quelle: Baymard Institute · Cart Abandonment &amp; Checkout-Usability Study
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Callout Banner -->
+      <div class="callout-banner">
+        <div class="callout-text">
+          Analytics zeigt, <strong>wo</strong> Kunden abspringen – <strong>aber nicht, warum.</strong>
+        </div>
+        <a href="#loesung" class="btn-cyan btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">Wie wir das lösen →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section id="loesung">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">02 · Unsere Lösung · Vision</div>
+        <h2>
+          Kein Kunde geht mehr wegen einer Hürde,<br>
+          <span class="text-cyan">die niemand gesehen hat.</span>
+        </h2>
+        <p class="lead">
+          Jeder Besuch endet dort, wo er hingehört: beim Kauf – in Ihrem Shop.
+        </p>
+      </div>
+
+      <!-- Process 4-Halte -->
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="step-num">01</div>
+          <h3>Kunden verstehen</h3>
+          <p>Zielgruppe analysieren und bis zu 1.000 synthetische Buyer Personas definieren (B2B, Mobile, Mixed-OS, Barrierefreiheit).</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">02</div>
+          <h3>Shop testen</h3>
+          <p>Tausende KI-Kunden navigieren autonom durch Ihren Shop und klicken realitätsgetreu bis zur Kasse – ohne echten Traffic.</p>
+        </div>
+
+        <!-- Center Hub -->
+        <div class="process-hub">
+          <div class="hub-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div>
+            <div class="hub-title">Ihr Shop im Metroverse Prüfstand</div>
+            <div class="hub-desc">Tausende automatisierte Testläufe vor jedem Release</div>
+          </div>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">03</div>
+          <h3>Hürden finden</h3>
+          <p>Präzise Diagnose, an welcher Stelle und aus welchem psychologischen oder technischen Grund Kunden den Kaufvorgang abbrechen.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">04</div>
+          <h3>Maßnahmen ordnen</h3>
+          <p>Konkrete, priorisierte Handlungsempfehlungen nach messbarer Umsatzwirkung geordnet – direkt umsetzbar für Ihr Team.</p>
+        </div>
+      </div>
+
+      <div class="safety-badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00B4C8" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>Sicher: Alles läuft in einer isolierten Testumgebung – <strong>kein echter Kunde, keine echte Belastung.</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engine Section: Metroverse -->
+  <section id="engine">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">02 · Unsere Lösung · Das Produkt</div>
+        <h2>
+          Metroverse:<br>
+          <span class="text-cyan">Workshop plus Service im Hintergrund</span>
+        </h2>
+        <p class="lead">
+          Die perfekte Symbiose aus strategischer Beratung und automatisierter KI-Qualitätssicherung.
+        </p>
+      </div>
+
+      <div class="engine-duo">
+        <!-- Card 1: Einmalig -->
+        <div class="engine-card white-card">
+          <span class="engine-badge">Einmalig</span>
+          <h3>Workshop &amp; Beratung</h3>
+          <p>
+            Gemeinsam decken wir die kritischsten Conversion-Killer auf. Wir ordnen Ihre Maßnahmen nach wirtschaftlichem Hebel und begleiten die Umsetzung Schritt für Schritt.
+          </p>
+        </div>
+
+        <!-- Connector Plus -->
+        <div class="engine-plus">+</div>
+
+        <!-- Card 2: On-Demand -->
+        <div class="engine-card dark-card">
+          <span class="engine-badge">On-Demand</span>
+          <h3>Service im Hintergrund</h3>
+          <p>
+            Volle Testläufe auf Knopfdruck – nach jedem Plugin-Update, Redesign oder Checkout-Release Ihres Shops. Fortlaufender Schutz vor neuen Conversion-Hürden.
+          </p>
+        </div>
+      </div>
+
+      <div class="engine-features-row">
+        <div class="feat-item">
+          <span class="feat-icon">🔒</span>
+          <span>Läuft komplett in einer sicheren Testumgebung</span>
+        </div>
+        <div class="feat-item">
+          <span class="feat-icon">✓</span>
+          <span>Keine echten Bestellungen oder Kundendaten</span>
+        </div>
+        <div class="feat-item">
+          <span class="feat-icon">⏱</span>
+          <span>Sie entscheiden flexibel, wann getestet wird</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mehrwert & ROI Calculator Section -->
+  <section id="mehrwert">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">03 · Warum wir · Der Mehrwert</div>
+        <h2>
+          Metroverse bezahlt sich<br>
+          <span class="text-cyan">von selbst</span>
+        </h2>
+        <p class="lead">
+          Schon eine minimale Hebung der Conversion-Rate um 0,5 Prozentpunkte amortisiert die Beratung in kürzester Zeit. Rechnen Sie selbst nach:
+        </p>
+      </div>
+
+      <div class="calc-wrapper">
+        <!-- Interactive Inputs -->
+        <div class="calc-inputs-card">
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <span class="calc-label">Monatliche Shop-Besucher:</span>
+              <span id="val-visitors" class="calc-value-display">10.000</span>
+            </div>
+            <input type="range" id="calc-visitors" class="calc-slider" min="1000" max="100000" step="1000" value="10000">
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <span class="calc-label">Durchschnittlicher Bestellwert (Ø AOV):</span>
+              <span id="val-aov" class="calc-value-display">100 €</span>
+            </div>
+            <input type="range" id="calc-aov" class="calc-slider" min="20" max="500" step="5" value="100">
+          </div>
+
+          <div class="calc-rate-comparison">
+            <span>Angenommener Uplift:</span>
+            <div class="calc-rate-badge">
+              <span>2,0 %</span> 
+              <span class="text-cyan">→ 2,5 % (+0,5 %)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output Card -->
+        <div class="calc-result-card">
+          <div>
+            <div class="result-eyebrow">Das Ergebnis für Ihren Shop</div>
+            <div id="roi-result-month" class="result-big">+ 5.000 €</div>
+            <p class="result-caption">
+              mehr Umsatz pro Monat – von Kunden, die sonst frustriert zum Wettbewerber abgewandert wären.
+            </p>
+          </div>
+          <div>
+            <div id="roi-result-year" class="result-year-badge">
+              + 60.000 € im Jahr
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flow diagram pills -->
+      <div class="calc-flow-pills">
+        <div class="flow-pill">
+          <span>💼</span>
+          <span>Hürde beseitigt</span>
+        </div>
+        <span class="flow-arrow">➔</span>
+        <div class="flow-pill">
+          <span>👥</span>
+          <span>Kunde bleibt im Shop</span>
+        </div>
+        <span class="flow-arrow">➔</span>
+        <div class="flow-pill dark">
+          <span>📈</span>
+          <span>Umsatz bleibt bei Ihnen</span>
+        </div>
+      </div>
+
+      <!-- Differentiation: Quadrant & 3 Pillars -->
+      <div class="differentiation-grid">
+        <!-- Matrix / Quadrant -->
+        <div class="quadrant-box">
+          <div class="quad-axis-label">↑ Schnelle Analyse</div>
+          
+          <div class="quadrant-grid">
+            <!-- Top Left -->
+            <div class="quadrant-item">
+              <h4>Web-Analytics</h4>
+              <span>Nur das „Wo“</span>
+            </div>
+            <!-- Top Right: Metroverse Winner -->
+            <div class="quadrant-item active-winner">
+              <h4>Metroverse ✓</h4>
+              <span>Auch das „Warum“</span>
+            </div>
+            <!-- Bottom Left -->
+            <div class="quadrant-item">
+              <h4>A/B-Tests</h4>
+              <span>Wochenlange Zyklen</span>
+            </div>
+            <!-- Bottom Right -->
+            <div class="quadrant-item">
+              <h4>Klassische UX-Agentur</h4>
+              <span>Hohe Honorare, langsam</span>
+            </div>
+          </div>
+
+          <div class="quad-axis-label">↓ Langsame Zyklen</div>
+          
+          <div class="quad-axis-horiz">
+            <span class="quad-axis-label">← Nur das „Wo“</span>
+            <span class="quad-axis-label">Auch das „Warum“ →</span>
+          </div>
+        </div>
+
+        <!-- 3 Differentiators -->
+        <div>
+          <div class="section-tag">03 · Warum wir · Abgrenzung</div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 24px;">Die Lücke zwischen Analytics und Agentur</h3>
+          <ul class="diff-list">
+            <li class="diff-item">
+              <h4>Echte Kundensicht</h4>
+              <p>Profile aus realen Verhaltensdaten, an echten Testpersonen evaluiert – keine reinen Heuristiken.</p>
+            </li>
+            <li class="diff-item">
+              <h4>Ohne echten Traffic</h4>
+              <p>Testen Sie Schwachstellen auf Herz und Nieren, bevor echte zahlende Kunden die Hürde im Shop erleben.</p>
+            </li>
+            <li class="diff-item">
+              <h4>Beratung + Service</h4>
+              <p>Strategischer Workshop zur Priorisierung und On-Demand Testläufe aus einer erfahrenen Hand.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">03 · Warum wir · Das Team</div>
+        <h2>
+          Fünf Köpfe aus Mannheim:<br>
+          <span class="text-cyan">Beratung trifft KI-Analyse</span>
+        </h2>
+        <p class="lead">
+          Studierende der DHBW Mannheim – Beratungskompetenz und modernste KI-Technologie aus einer Hand.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- 1: Shmail Sheikh -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="assets/img/team/shmail.jpg" alt="Shmail Sheikh" class="team-avatar">
+          </div>
+          <div class="team-name">Shmail Sheikh</div>
+          <div class="team-role">Projektmanager</div>
+        </div>
+
+        <!-- 2: Philipp Weissgerber -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="assets/img/team/philipp.jpg" alt="Philipp Weissgerber" class="team-avatar">
+          </div>
+          <div class="team-name">Philipp Weissgerber</div>
+          <div class="team-role">Designer</div>
+        </div>
+
+        <!-- 3: Lennart Kleemann -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="assets/img/team/lennart.jpg" alt="Lennart Kleemann" class="team-avatar">
+          </div>
+          <div class="team-name">Lennart Kleemann</div>
+          <div class="team-role">Berater</div>
+        </div>
+
+        <!-- 4: Gabriel Klisanin -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="assets/img/team/gabriel.jpg" alt="Gabriel Klisanin" class="team-avatar">
+          </div>
+          <div class="team-name">Gabriel Klisanin</div>
+          <div class="team-role">Analyst</div>
+        </div>
+
+        <!-- 5: Jannis Köllner -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="assets/img/team/jannis.jpg" alt="Jannis Köllner" class="team-avatar">
+          </div>
+          <div class="team-name">Jannis Köllner</div>
+          <div class="team-role">Entwickler</div>
+        </div>
+      </div>
+
+      <div class="team-origin-badge">
+        DHBW Mannheim Consulting Project · <strong>Technik &amp; Strategie vereint</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets / Packages Section -->
+  <section id="pakete">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">04 · Ihr Ticket</div>
+        <h2>
+          Drei Halte.<br>
+          <span class="text-cyan">Ein Ziel: mehr Umsatz.</span>
+        </h2>
+        <p class="lead">
+          Finden Sie das passende Einstiegspaket für Ihren Webshop.
+        </p>
+      </div>
+
+      <div class="tickets-grid">
+        <!-- Ticket 1: Standard -->
+        <div class="ticket-card">
+          <div>
+            <div class="ticket-num">1</div>
+            <h3 class="ticket-name">Standard</h3>
+            <p class="ticket-subtitle">Hürden sichtbar machen und erste Potenziale aufdecken.</p>
+            <ul class="ticket-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Initialer Persona-Audit mit 250 Durchläufen</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Erkennung von kritischen Checkout-Abbrüchen</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Kompakter Ergebnisbericht mit Screenshots</span>
+              </li>
+            </ul>
+          </div>
+          <a href="#kontakt" class="btn-secondary" style="width: 100%; justify-content: center;">Ticket anfragen</a>
+        </div>
+
+        <!-- Ticket 2: Premium (Featured) -->
+        <div class="ticket-card featured">
+          <div class="featured-pill">Empfohlen</div>
+          <div>
+            <div class="ticket-num">2</div>
+            <h3 class="ticket-name">Premium</h3>
+            <p class="ticket-subtitle">Benchmark, Tiefenanalyse &amp; priorisierte Handlungsempfehlungen.</p>
+            <ul class="ticket-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Vollständige Flotte: 1.000 KI-Kundenpersonas</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Workshop mit unserem Beratungsteam in Mannheim / Remote</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Priorisierte Roadmap nach messbarer Umsatzwirkung</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Benchmark-Vergleich gegen Branchendurchschnitt</span>
+              </li>
+            </ul>
+          </div>
+          <a href="#kontakt" class="btn-cyan btn-primary" style="width: 100%; justify-content: center;">Jetzt Erstgespräch buchen →</a>
+        </div>
+
+        <!-- Ticket 3: Deluxe -->
+        <div class="ticket-card">
+          <div>
+            <div class="ticket-num">3</div>
+            <h3 class="ticket-name">Deluxe</h3>
+            <p class="ticket-subtitle">Begleitete Umsetzung &amp; automatisierte Dauerüberwachung.</p>
+            <ul class="ticket-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Alles aus dem Premium-Paket enthalten</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Engmaschige Begleitung der technischen Umsetzung</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Metroverse On-Demand: Nachtests nach Shop-Updates</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Kontinuierliche Erfolgskontrolle &amp; Reporting</span>
+              </li>
+            </ul>
+          </div>
+          <a href="#kontakt" class="btn-secondary" style="width: 100%; justify-content: center;">Ticket anfragen</a>
+        </div>
+      </div>
+
+      <div class="ticket-footer-note">
+        Der Preis wird individuell kalkuliert – je nach Umfang und Größe Ihres Webshops.
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="kontakt" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-panel">
+          <div class="section-tag">05 · Nächster Halt · Erstgespräch</div>
+          <h3>Ihr Erstgespräch.<br><span class="text-cyan">Unverbindlich.</span></h3>
+          <p class="lead">
+            Wir rechnen gemeinsam in 20 Minuten nach, was Ihr Shop gerade an unsichtbaren Hürden verliert – und wie viel Sie zurückholen können.
+          </p>
+
+          <div class="contact-details">
+            <a href="https://journeymetric.de" class="contact-row">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <span>journeymetric.de</span>
+            </a>
+
+            <a href="mailto:contact@journeymetric.de" class="contact-row">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span>contact@journeymetric.de</span>
+            </a>
+
+            <div class="contact-row">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span>Coblitzallee 1–9, 68163 Mannheim</span>
+            </div>
+          </div>
+
+          <!-- QR Code Direct Callout -->
+          <div class="qr-preview-box">
+            <a href="qr/" class="qr-thumb">
+              <img src="assets/img/qr-code.png" alt="JourneyMetric Pitch QR Code">
+            </a>
+            <div class="qr-preview-text">
+              <h4>Pitch-Zuhörer?</h4>
+              <p>Scannen Sie den QR-Code aus den Folien oder öffnen Sie direkt das mobile Cockpit:</p>
+              <a href="qr/">Mobile Cockpit öffnen →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Ihr Name *</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="z. B. Dr. Sarah Sommer" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Geschäftliche E-Mail-Adresse *</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="name@unternehmen.de" required>
+          </div>
+
+          <div class="form-group">
+            <label for="shop-url" class="form-label">Shop-URL / Website</label>
+            <input type="url" id="shop-url" name="shop-url" class="form-input" placeholder="https://ihr-shop.de">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Ihre Nachricht / Aktuelle Herausforderung</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Welche Abbrüche beobachten Sie im Checkout?"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary form-btn">Unverbindliches Erstgespräch anfragen →</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-mark">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+              <path d="M12 9V20C12 22 10 23 8 23" stroke="#00B4C8" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="12" cy="7" r="2" fill="#FFFFFF"/>
+              <path d="M16 23V11L21 17L26 11V23" stroke="#00B4C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="26" cy="24" r="2.5" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <span>JOURNEYMETRIC</span>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#loesung">Lösung</a></li>
+          <li><a href="#engine">Metroverse</a></li>
+          <li><a href="#mehrwert">ROI</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="qr/">Pitch QR-Portal</a></li>
+          <li><a href="impressum/">Impressum</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 JourneyMetric · Unternehmensberatung für datenbasierte Tests &amp; Benchmarks digitaler Services und KI-Anwendungen.
+        </div>
+        <div class="footer-roster">
+          Sheikh · Weissgerber · Kleemann · Klisanin · Köllner
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

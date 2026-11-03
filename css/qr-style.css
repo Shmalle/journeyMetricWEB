@@ -1,0 +1,343 @@
+/* ============================================================
+   JourneyMetric — qr-style.css
+   QR Landing Page (Dark Theme)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --bg:        #0D1B2A;
+  --bg2:       #1A2332;
+  --cyan:      #00B4C8;
+  --red:       #E63946;
+  --white:     #FFFFFF;
+  --muted:     rgba(255,255,255,.55);
+  --border:    rgba(255,255,255,.08);
+  --radius:    12px;
+  --radius-lg: 20px;
+  --transition: .3s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container { width: min(960px, 100% - 2rem); margin-inline: auto; }
+
+/* ── Animated Background Metro Map ─── */
+.bg-metro {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: .07;
+}
+
+/* ── Page Content ─── */
+.qr-page { position: relative; z-index: 1; }
+
+/* Hero */
+.qr-hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+}
+
+.qr-label {
+  display: inline-block;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  border: 1px solid rgba(0,180,200,.35);
+  padding: .35rem .85rem;
+  border-radius: 20px;
+  background: rgba(0,180,200,.08);
+  margin-bottom: 1.5rem;
+}
+
+.qr-headline {
+  font-size: clamp(3.5rem, 9vw, 6.5rem);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -.03em;
+  margin-bottom: 1.25rem;
+}
+.qr-headline span { color: var(--cyan); }
+
+.qr-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 520px;
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+}
+
+/* ROI Calculator */
+.qr-roi {
+  padding: 3rem 1rem;
+}
+.qr-roi__card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.qr-roi__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: rgba(255,255,255,.85);
+}
+
+.qr-slider-group { margin-bottom: 1.75rem; }
+.qr-slider-group label {
+  display: flex;
+  justify-content: space-between;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.qr-slider-group label span {
+  font-weight: 800;
+  color: var(--cyan);
+  font-size: .9rem;
+}
+
+.quick-pick {
+  display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .75rem;
+}
+.quick-pick button {
+  background: rgba(255,255,255,.07);
+  border: 1px solid var(--border);
+  color: rgba(255,255,255,.7);
+  padding: .35rem .8rem;
+  border-radius: 20px;
+  font-size: .8rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.quick-pick button:hover,
+.quick-pick button.active {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--white);
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: rgba(255,255,255,.12);
+  border-radius: 2px;
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--cyan);
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,180,200,.5);
+}
+
+.qr-roi__result {
+  background: linear-gradient(135deg, rgba(0,180,200,.12), rgba(0,180,200,.04));
+  border: 1px solid rgba(0,180,200,.25);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.qr-roi__result-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .4rem;
+}
+.qr-roi__result-value {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  color: var(--cyan);
+  letter-spacing: -.02em;
+  line-height: 1;
+  margin-bottom: .3rem;
+}
+.qr-roi__result-sub {
+  font-size: .88rem;
+  color: var(--muted);
+}
+
+/* Action Cards */
+.qr-cards {
+  padding: 2rem 1rem;
+}
+.qr-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.25rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.qr-action-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: transform var(--transition), border-color var(--transition);
+}
+.qr-action-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0,180,200,.35);
+}
+.qr-action-card__num {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  color: var(--cyan);
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+.qr-action-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .4rem;
+  color: var(--white);
+}
+.qr-action-card__desc {
+  font-size: .83rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* CTA */
+.qr-cta {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.qr-cta .btn-big {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  background: var(--cyan);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  padding: 1.1rem 2.5rem;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.qr-cta .btn-big:hover {
+  background: #00cae0;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0,180,200,.4);
+}
+
+/* Question Prompt */
+.qr-question {
+  padding: 2rem 1rem 1.5rem;
+}
+.qr-question__card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--cyan);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.8);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Footer */
+.qr-footer {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: rgba(255,255,255,.3);
+  font-size: .8rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+.qr-footer a {
+  color: rgba(255,255,255,.5);
+  text-decoration: none;
+}
+.qr-footer a:hover { color: var(--cyan); }
+
+/* Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: .1s; }
+.reveal-delay-2 { transition-delay: .2s; }
+.reveal-delay-3 { transition-delay: .25s; }
+
+/* Logo in nav */
+.qr-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+.qr-nav__logo {
+  display: flex; align-items: center; gap: .6rem;
+  font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+}
+.qr-nav__logo-sq {
+  width: 32px; height: 32px;
+  background: rgba(255,255,255,.08);
+  border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem; font-weight: 800; color: var(--cyan);
+}
+.qr-nav__home {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  display: flex; align-items: center; gap: .35rem;
+  transition: color .2s;
+}
+.qr-nav__home:hover { color: var(--cyan); }
+
+@media (max-width: 640px) {
+  .qr-cards__grid { grid-template-columns: 1fr; }
+  .qr-hero { padding: 4rem 1rem 2rem; }
+  .qr-roi__card { padding: 1.5rem; }
+}
