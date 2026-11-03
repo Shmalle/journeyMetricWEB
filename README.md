@@ -58,3 +58,4 @@ journeyMetricWEB/
 - **Domain:** [journeymetric.de](https://journeymetric.de)
 - **E-Mail:** [contact@journeymetric.de](mailto:contact@journeymetric.de)
 - **Standort:** Coblitzallee 1–9, 68163 Mannheim
+
